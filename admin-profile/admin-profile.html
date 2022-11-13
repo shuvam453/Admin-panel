@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="../img/title-icons/title-bar.png">
+	<title>Admin Profile</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">    
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="CSS/admin-profile.css">
+</head>
+<body>
+
+	<div class="container side_bar">
+		<div class="navigation">
+			<ul>
+				<li>
+					<a href="https://topstack.co.in/">
+						<span class="icon"><img src="../img/logo.png"></span>
+						<span class="title"><h2>Topstack</h2></span>
+					</a>
+				</li>
+				<li>
+					<a href="../Dashboard.html">
+						<span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+						<span class="title">Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a href="../sub-main/Main-slider.html">
+						<span class="icon"><i class="fa fa-sliders" aria-hidden="true"></i></span>
+						<span class="title">Main Slider</span>
+					</a>
+				</li>
+				<li>
+					<a href="../sub-main/Upcoming.html">
+						<span class="icon"><i class="fa fa-university" aria-hidden="true"></i></span>
+						<span class="title">Upcoming Courses</span>
+					</a>
+				</li>
+				<li>
+					<a href="../sub-main/Ongoing.html">
+						<span class="icon"><i class="fa fa-snowflake-o" aria-hidden="true"></i></span>
+						<span class="title">Ongoing Projects</span>
+					</a>
+				</li>
+				<li>
+					<a href="../sub-main/Services-list.html">
+						<span class="icon"><i class="fa fa-cogs" aria-hidden="true"></i></span>
+						<span class="title">Services List</span>
+					</a>
+				</li>
+				<li>
+					<a href="../sub-main/Hiring-Section.html">
+						<span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+						<span class="title">Hiring Section</span>
+					</a>
+				</li>
+				<li>
+					<a href="../sub-main/Counter-up_Values.html">
+						<span class="icon"><i class="fa fa-line-chart" aria-hidden="true"></i></span>
+						<span class="title">Counter-up Values</span>
+					</a>
+				</li>
+				<li>
+					<a href="../sub-main/Success-Story.html">
+						<span class="icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+						<span class="title">Success Story</span>
+					</a>
+				</li>
+				<li>
+					<a href="../sub-main/Testimonials.html">
+						<span class="icon"><i class="fa fa-id-card-o" aria-hidden="true"></i></span>
+						<span class="title">Testimonials</span>
+					</a>
+				</li>
+				<li>
+					<a href="../sub-main/Show-Uploaded-CV.html">
+						<span class="icon"><i class="fa fa-upload" aria-hidden="true"></i></span>
+						<span class="title">Show Uploaded CV</span>
+					</a>
+				</li>
+				<li>
+					<a href="../sub-main/Contact-Details.html">
+						<span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+						<span class="title">Contact Details</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="main">
+			<div class="topbar">
+				<div class="toggle" onclick="toggleMenu();"></div>
+				<div class="user">
+					<p>Welcome to <a href="admin-profile.html">Admin</a></p>
+					<a href="../adding form/login.html">
+						<button type="button" value="submit"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign out</button>
+					</a>
+				</div>
+			</div>
+
+			<!-- profile details -->
+
+			<div class="admin-profile">
+				<h1>Profile</h1>
+				<div class="profile-details">
+					<div class="admin-img">
+						<img src="img/admin-img.jpg">
+					</div>
+					<div class="admin-details">
+						<p>Lorem Ipsum</p>
+						<a href="../adding form/edit-profile.html">
+							<button type="submit">Edit Profile</button>
+						</a>
+						<a href="../adding form/change-password.html">
+							<button type="submit">Change Password</button>
+						</a>
+					</div>
+					<div class="admin-info">
+						<table id="customers">
+						  <tr>
+						    <th>Name :</th>
+						    <td>Lorem Ipsum</td>
+						  </tr>
+						  <tr>
+						    <th>Email ID :</th>
+						    <td>example@gmail.com</td>
+						  </tr>
+						  <tr>
+						    <th>Contact No :</th>
+						    <td>9876543210</td>
+						  </tr>
+						  <tr>
+						    <th>Password :</th>
+						    <td>loremipsum123</td>
+						  </tr>
+						</table>
+					</div>	
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+	<script>
+		function toggleMenu(){
+			let toggle = document.querySelector('.toggle');
+			let navigation = document.querySelector('.navigation');
+			let main = document.querySelector('.main');
+			toggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+			main.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>

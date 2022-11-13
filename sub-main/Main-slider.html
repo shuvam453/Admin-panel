@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="../img/title-icons/title-bar.png">
+	<title>Main Slider - Admin Panel</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">    
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Main-slider.css">
+</head>
+<body>
+
+	<div class="container side_bar">
+		<div class="navigation">
+			<ul>
+				<li>
+					<a href="https://topstack.co.in/">
+						<span class="icon"><img src="../img/logo.png"></span>
+						<span class="title"><h2>Topstack</h2></span>
+					</a>
+				</li>
+				<li>
+					<a href="../Dashboard.html">
+						<span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+						<span class="title">Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a href="sub-main/Main-slider.html" class="list-active">
+						<span class="icon"><i class="fa fa-sliders" aria-hidden="true"></i></span>
+						<span class="title">Main Slider</span>
+					</a>
+				</li>
+				<li>
+					<a href="Upcoming.html">
+						<span class="icon"><i class="fa fa-university" aria-hidden="true"></i></span>
+						<span class="title">Upcoming Courses</span>
+					</a>
+				</li>
+				<li>
+					<a href="Ongoing.html">
+						<span class="icon"><i class="fa fa-snowflake-o" aria-hidden="true"></i></span>
+						<span class="title">Ongoing Projects</span>
+					</a>
+				</li>
+				<li>
+					<a href="Services-list.html">
+						<span class="icon"><i class="fa fa-cogs" aria-hidden="true"></i></span>
+						<span class="title">Services List</span>
+					</a>
+				</li>
+				<li>
+					<a href="Hiring-Section.html">
+						<span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+						<span class="title">Hiring Section</span>
+					</a>
+				</li>
+				<li>
+					<a href="Counter-up_Values.html">
+						<span class="icon"><i class="fa fa-line-chart" aria-hidden="true"></i></span>
+						<span class="title">Counter-up Values</span>
+					</a>
+				</li>
+				<li>
+					<a href="Success-Story.html">
+						<span class="icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+						<span class="title">Success Story</span>
+					</a>
+				</li>
+				<li>
+					<a href="Testimonials.html">
+						<span class="icon"><i class="fa fa-id-card-o" aria-hidden="true"></i></span>
+						<span class="title">Testimonials</span>
+					</a>
+				</li>
+				<li>
+					<a href="Show-Uploaded-CV.html">
+						<span class="icon"><i class="fa fa-upload" aria-hidden="true"></i></span>
+						<span class="title">Show Uploaded CV</span>
+					</a>
+				</li>
+				<li>
+					<a href="Contact-Details.html">
+						<span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+						<span class="title">Contact Details</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- topbar -->
+
+		<div class="main">
+			<div class="topbar">
+				<div class="toggle" onclick="toggleMenu();"></div>
+				<div class="user">
+					<p>Welcome to <a href="#" class="userPop"><span class="user_logo"><img src="../admin-profile/img/admin-img.jpg" alt=""></span> Admin</a></p>
+					<div class="user_popUp">
+						<div class="userProfile">
+							<span><img src="../admin-profile/img/admin-img.jpg" alt=""></span>
+							<h4>Super Admin</h4>
+							<p>2007</p>
+						</div>
+						<div class="userBtn_wrap">
+							<a href="admin-profile/admin-profile.html" class="userBtn">Profile</a>
+							<a href="adding form/login.html" class="userBrdr_Btn"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign out</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div class="cardBox">
+				<div class="card">
+					<div>
+						<div class="numbers">1,089</div>
+						<div class="cardName">Daily Views</div>
+					</div>
+					<div class="iconBox">
+						<i class="fa fa-eye"></i>
+					</div>
+				</div>
+				<div class="card">
+					<div>
+						<div class="numbers">89</div>
+						<div class="cardName">Sales</div>
+					</div>
+					<div class="iconBox">
+						<i class="fa fa-shopping-cart"></i>
+					</div>
+				</div>
+				<div class="card">
+					<div>
+						<div class="numbers">1,08</div>
+						<div class="cardName">comments</div>
+					</div>
+					<div class="iconBox">
+						<i class="fa fa-comment"></i>
+					</div>
+				</div>
+				<div class="card">
+					<div>
+						<div class="numbers">100000</div>
+						<div class="cardName">Earnings</div>
+					</div>
+					<div class="iconBox">
+						<i class="fa fa-usd"></i>
+					</div>
+				</div>
+			</div> -->
+
+			<div class="details">
+				<div class="recentOrder">
+					<div class="responsive_table">
+						<div class="cardHeader">
+							<h2>Main Slider Images</h2>
+							<div class="tableHederBtn_wrap">
+								<a href="../adding form/main-slider-form.html" class="btn-two">
+									<button type="submit">Add</button>
+								</a>
+								<a href="#" class="btn">View All</a>
+							</div>
+						</div>
+						<table id="myTable" class="display icon_table" style="width:100%">
+						<thead>
+							<tr>
+								<th>Sl no.</th>
+								<th>Video uploading</th>
+								<th>Date</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>System Architect</td>
+								<td>2011/04/25</td>
+								<td>
+									<a href="#" class="editBtn"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+									<a href="#" class="deleteBtn"><i class="fa fa-trash" aria-hidden="true"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Accountant</td>
+								<td>2011/07/25</td>
+								<td>
+									<button type="submit" class="editBtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+									<button type="submit" class="deleteBtn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Junior Technical Author</td>
+								<td>2009/01/12</td>
+								<td>
+									<button type="submit" class="editBtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+									<button type="submit" class="deleteBtn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Senior Javascript Developer</td>
+								<td>2012/03/29</td>
+								<td>
+									<button type="submit" class="editBtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+									<button type="submit" class="deleteBtn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Accountant</td>
+								<td>2008/11/28</td>
+								<td>
+									<button type="submit" class="editBtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+									<button type="submit" class="deleteBtn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>Integration Specialist</td>
+								<td>2012/12/02</td>
+								<td>
+									<button type="submit" class="editBtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+									<button type="submit" class="deleteBtn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>Sales Assistant</td>
+								<td>2012/08/06</td>
+								<td>
+									<button type="submit" class="editBtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+									<button type="submit" class="deleteBtn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>Integration Specialist</td>
+								<td>2010/10/14</td>
+								<td>
+									<button type="submit" class="editBtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+									<button type="submit" class="deleteBtn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>Integration Specialist</td>
+								<td>2010/10/14</td>
+								<td>
+									<button type="submit" class="editBtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+									<button type="submit" class="deleteBtn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>Integration Specialist</td>
+								<td>2010/10/14</td>
+								<td>
+									<button type="submit" class="editBtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+									<button type="submit" class="deleteBtn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>11</td>
+								<td>Integration Specialist</td>
+								<td>2010/10/14</td>
+								<td>
+									<button type="submit" class="editBtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+									<button type="submit" class="deleteBtn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th>Sl no.</th>
+								<th>Video uploading</th>
+								<th>Date</th>
+								<th>Status</th>
+							</tr>
+						</tfoot>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+	<script>
+		function toggleMenu(){
+			let toggle = document.querySelector('.toggle');
+			let navigation = document.querySelector('.navigation');
+			let main = document.querySelector('.main');
+			toggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+			main.classList.toggle('active');
+		}
+	</script>
+	<script>
+		$(document).ready( function () {
+		    $('#myTable').DataTable();
+		} );
+	</script>
+	<script src="../JS/custom.js"></script>
+</body>
+</html>
